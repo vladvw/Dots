@@ -30,14 +30,16 @@ button { color:inherit; font:inherit; }
 .board { position:absolute; inset:125px 0 45px; touch-action:none; user-select:none; }
 #trails { position:absolute; inset:0; width:100%; height:100%; overflow:visible; pointer-events:none; }
 .trail { fill:none; stroke:#56645d; stroke-width:2; stroke-linecap:round; stroke-dasharray:4 5; opacity:.55; }
-.node { position:absolute; width:34px; height:34px; transform:translate(-50%,-50%); border:0; border-radius:50%; cursor:pointer; background:transparent; padding:0; }
-.node:before { content:""; position:absolute; inset:8px; border-radius:50%; background:var(--node-color); box-shadow:0 3px 8px #5d5d4f33,inset 0 0 0 2px #ffffff66; transition:.18s; }
+.node { position:absolute; width:44px; height:44px; transform:translate(-50%,-50%); border:0; border-radius:50%; cursor:pointer; background:transparent; padding:0; }
+.node:before { content:""; position:absolute; inset:7px; border-radius:50%; background:var(--node-color); box-shadow:0 4px 10px #5d5d4f40,inset 0 0 0 2px #ffffff70; transition:.18s; }
 .node:after { content:""; position:absolute; inset:2px; border:1px solid var(--node-color); border-radius:50%; opacity:0; transition:.2s; }
 .node.active:before { transform:scale(1.25); box-shadow:0 0 0 5px #ffffff55,0 0 22px var(--node-color); }
 .node.active:after { opacity:.45; transform:scale(1.15); }
 .node.coral { --node-color:var(--coral); }.node.gold { --node-color:var(--gold); }.node.blue { --node-color:var(--blue); }.node.sage { --node-color:var(--sage); }
-.moon { position:absolute; left:50%; top:48%; width:112px; height:112px; border-radius:50%; transform:translate(-50%,-50%); border:1px solid #fff8; box-shadow:inset -15px -12px 25px #888c7d1c,0 12px 32px #55654f18; background:radial-gradient(circle at 36% 32%,#fffdf2,#f1e7cf 65%,#d8ccb4); opacity:.8; pointer-events:none; }
-.moon span { position:absolute; width:18px; height:9px; border-radius:50%; background:#cfc4ab32; top:28px; left:24px; transform:rotate(-15deg); }
+.basketball { position:absolute; left:50%; top:48%; width:118px; height:118px; border-radius:50%; transform:translate(-50%,-50%) rotate(-8deg); overflow:hidden; border:2px solid #c66522; box-shadow:inset -18px -14px 24px #8c3e1f55,inset 12px 10px 18px #ffd08055,0 13px 28px #7347223d; background:radial-gradient(circle at 34% 28%,#f6a13c,#e57925 58%,#bd4f1d); pointer-events:none; }
+.basketball:before { content:""; position:absolute; inset:-4px 31px; border-left:3px solid #73361f; border-right:3px solid #73361f; border-radius:50%; opacity:.9; }
+.basketball:after { content:""; position:absolute; left:-8px; right:-8px; top:50%; height:3px; transform:translateY(-50%); background:#73361f; box-shadow:0 1px 0 #f5a14a55; }
+.basketball span { position:absolute; left:-10%; top:48%; width:120%; height:3px; transform:rotate(-34deg); background:#73361f; box-shadow:0 1px 0 #f5a14a55; }
 .streak { position:absolute; bottom:22px; width:100%; display:flex; justify-content:center; align-items:center; gap:10px; }
 .streak p { font:italic 11px "DM Serif Display"; color:#7e766d; margin:0; }.streak span { width:24px; border-top:1px solid #aa9e92; }
 footer { padding-top:18px; text-align:center; }

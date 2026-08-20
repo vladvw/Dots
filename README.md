@@ -2,6 +2,12 @@
 
 A dependency-free, installable color-rhythm tracing puzzle for mobile and desktop.
 
+## Play online
+
+**[Play Driftloom](https://vladvw.github.io/Dots/)**
+
+No download or account is required. The game runs in a browser on mobile and desktop.
+
 ## Play locally
 
 Install [Node.js 18+](https://nodejs.org/), then run:
