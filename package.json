@@ -1,0 +1,10 @@
+{
+  "name": "driftloom",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A calm, color-rhythm tracing puzzle prototype.",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node server.mjs"
+  }
+}

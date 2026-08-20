@@ -1,0 +1,18 @@
+{
+  "name": "Driftloom — The Wandering Sky",
+  "short_name": "Driftloom",
+  "description": "A calm color-rhythm tracing puzzle.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f0e7",
+  "theme_color": "#f7f1e8",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
